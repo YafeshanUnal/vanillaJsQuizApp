@@ -1,0 +1,20 @@
+// Renk Tanımlamaları
+
+// Başlıca Renkler
+$primary-color: #67ac59; // Birincil renk
+$secondary-color: #6c757d; // İkincil renk
+
+// Arka Plan Renkleri
+$background-color: #cdcfc8; // Arka plan rengi
+$navbar-bg-color: #343a40; // Navigasyon çubuğu arka plan rengi
+
+// Metin Renkleri
+$text-color: #212529; // Ana metin rengi
+$heading-color: #333; // Başlık rengi
+$link-color: #007bff; // Bağlantı rengi
+$color-gray-300: #e2e2e2; // Gri renk
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+}

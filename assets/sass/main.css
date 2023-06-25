@@ -1,0 +1,214 @@
+body {
+  background-color: #cdcfc8;
+  color: #212529;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: -moz-min-content;
+  width: min-content;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #67ac59;
+  justify-content: flex-end;
+  direction: rtl;
+  background-color: aliceblue;
+}
+header nav a {
+  text-decoration: none;
+  color: #67ac59;
+}
+header nav #logo {
+  width: 100px;
+  height: 100px;
+}
+header nav #logo:hover {
+  animation: scale 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  header nav #logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+body {
+  background-color: #cdcfc8;
+  color: #212529;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+}
+main .welcome-screen {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+main .welcome-screen h2 {
+  margin-bottom: 1rem;
+}
+main .welcome-screen p {
+  margin-bottom: 2rem;
+}
+main .welcome-screen .start-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .quiz {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #f8f8f8;
+}
+main .quiz h2 {
+  margin-bottom: 1rem;
+}
+main .quiz .restart-button,
+main .quiz .half-button,
+main .quiz .hint-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+main .quiz .restart-button:disabled,
+main .quiz .half-button:disabled,
+main .quiz .hint-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+main .quiz section {
+  margin-bottom: 2rem;
+}
+main .quiz section .quiz-question {
+  margin-bottom: 1rem;
+}
+main .quiz section .hint {
+  margin-bottom: 1rem;
+}
+main .quiz section .quiz-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .quiz section .quiz-options li {
+  margin-bottom: 0.5rem;
+}
+main .quiz section .quiz-options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main .quiz section .quiz-options input[type=radio] {
+  margin-right: 0.5rem;
+}
+main .quiz .quiz-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+main .quiz .quiz-navigation .previous-question,
+main .quiz .quiz-navigation .next-question {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+main .show-result {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #f8f8f8;
+  color: #212529;
+  cursor: pointer;
+}
+main .show-result:hover {
+  background-color: khaki;
+}
+main .result-screen h2 {
+  margin-bottom: 1rem;
+}
+main .result-screen .result-text {
+  margin-bottom: 1rem;
+}
+main .result-screen h3 {
+  margin-bottom: 1rem;
+}
+main .result-screen .result-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .result-screen .result-options li {
+  margin-bottom: 0.5rem;
+}
+main .result-screen .result-options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main .result-screen .restart-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

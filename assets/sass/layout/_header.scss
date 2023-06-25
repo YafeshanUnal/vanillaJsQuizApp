@@ -1,0 +1,71 @@
+@import "../abstracts/colors";
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: min-content;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        color: $primary-color;
+        justify-content: flex-end;
+        direction: rtl;
+        background-color: aliceblue;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+
+        #logo {
+            width: 100px;
+            height: 100px;
+            &:hover {
+                animation: scale 1s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+
+            #logo {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

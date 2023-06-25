@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/sass/main.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <!-- use to semantic html tag
+    header, nav, main, footer, aside, section, article, figure, figcaption,
+    -->
+    <header>
+        <nav>
+            <a href="https://www.sifirdanbire.net/" class="btn btn-primary">sifirdanbire.net</a>
+            <img id="logo" src="/assets/images/logo.svg" alt="logo">
+        </nav>
+    </header>
+    <main>
+        <div class="welcome-screen">
+            <h2>Quiz App</h2>
+            <p>Quizimize hoş geldiniz! Test etmek istediğiniz bilgi alanını seçin ve başlamak için "Başla" butonuna
+                tıklayın.</p>
+            <button class="start-button">Başla</button>
+        </div>
+        <div class="quiz" style="display: none;">
+            <h2>Quiz App</h2>
+            <button class="restart-button">Restart</button>
+            <button class="half-button">
+                Half To Half
+            </button>
+            <button class="hint-button">
+                Hint
+            </button>
+            <section>
+                <h3 class="quiz-question"></h3>
+                <p class="hint"></p>
+                <ul class="quiz-options">
+                    <li>
+                        <label>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <div class="quiz-navigation">
+                <button class="previous-question">
+                    Previous Question
+                </button>
+                <button class="next-question">
+                    Next Question
+                </button>
+            </div>
+        </div>
+        <button class="show-result" style="display: none;">
+            Sonuçları Göster
+        </button>
+        <div class="result-screen" style="display: none;">
+            <h2>Quiz App</h2>
+            <p class="result-text"></p>
+            <h3>
+                Result Details
+            </h3>
+            <ul class="result-options">
+                <li>
+                    <label>
+                    </label>
+                </li>
+            </ul>
+            <button class="restart-button">Restart</button>
+        </div>
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
